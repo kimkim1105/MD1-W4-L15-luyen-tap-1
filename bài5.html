@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  function chomSao(){
+    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let a = prompt("Nhập vào tên ngôi sao: ");
+    for (let i =0;i<arr1.length;i++){
+      if (arr1.indexOf(a)>=0){
+        let x = arr1.indexOf(a)
+        console.log('ktra a có trong mảng k ',x)
+        alert(arr2[x]);
+        console.log('ktra giá trị', arr2[x])
+        return;
+      }else {
+        alert("Không tìm thấy ngôi sao")
+      }
+    }
+  }
+  chomSao();
+</script>
